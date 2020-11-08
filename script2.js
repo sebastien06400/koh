@@ -7,14 +7,14 @@ second = document.getElementById("second")
 function top8(name, array, element) {
   element.innerHTML = `
     <div class="carte">${name}</div></br>
-    <div class="carte"><img src="${array[0]}.jpg" width="80px"></div>
-    <div class="carte"><img src="${array[1]}.jpg" width="80px"></div>
-    <div class="carte"><img src="${array[2]}.jpg" width="80px"></div>
-    <div class="carte"><img src="${array[3]}.jpg" width="80px"></div>
-    <div class="carte"><img src="${array[4]}.jpg" width="80px"></div>
-    <div class="carte"><img src="${array[5]}.jpg" width="80px"></div>
-    <div class="carte"><img src="${array[6]}.jpg" width="80px"></div>
-    <div class="carte"><img src="${array[7]}.jpg" width="80px"></div>
+    <div class="carte"><img src="${array[0]}.jpg" width="70px"></div>
+    <div class="carte"><img src="${array[1]}.jpg" width="70px"></div>
+    <div class="carte"><img src="${array[2]}.jpg" width="70px"></div>
+    <div class="carte"><img src="${array[3]}.jpg" width="70px"></div>
+    <div class="carte"><img src="${array[4]}.jpg" width="70px"></div>
+    <div class="carte"><img src="${array[5]}.jpg" width="70px"></div>
+    <div class="carte"><img src="${array[6]}.jpg" width="70px"></div>
+    <div class="carte"><img src="${array[7]}.jpg" width="70px"></div>
     `
   count += 1;
   console.log("NOOOOOO")
