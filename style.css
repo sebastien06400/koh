@@ -202,7 +202,7 @@ visibility: hidden;
     font-size: 16px;
     font-family: 'Segoe UI Black';
     font-weight: bolder;
-    filter: saturate(120%)
+    filter: saturate(120%);
 }
 
 .carte {

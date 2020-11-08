@@ -1,7 +1,5 @@
 
 
-count = 0
-
 first = document.getElementById("first")
 second = document.getElementById("second")
 
@@ -12,12 +10,14 @@ function top8(name, array, element) {
     <div class="carte"><img src="${array[0]}.jpg" width="80px"></div>
     <div class="carte"><img src="${array[1]}.jpg" width="80px"></div>
     <div class="carte"><img src="${array[2]}.jpg" width="80px"></div>
+    <div class="carte"><img src="${array[3]}.jpg" width="80px"></div>
     <div class="carte"><img src="${array[4]}.jpg" width="80px"></div>
     <div class="carte"><img src="${array[5]}.jpg" width="80px"></div>
     <div class="carte"><img src="${array[6]}.jpg" width="80px"></div>
     <div class="carte"><img src="${array[7]}.jpg" width="80px"></div>
     `
   count += 1;
+  console.log("NOOOOOO")
 }
 
 
@@ -50,10 +50,14 @@ saved.addEventListener("click", () => {
 
       function toast2() {
         let hash = (response.data);
-        console.log(hash)
         second.style.display = "flex"
 
-
+        count = 0
+        m = 0
+        while (hash[`user${m+1}`]) {
+          m += 1;
+          count += 1
+        }
 
         ordered = []
 
@@ -61,8 +65,6 @@ saved.addEventListener("click", () => {
           order = document.getElementById(k).src.match(/^.*(?=.jpg)/)[0].slice(-1)
           ordered.push(order)
         }
-        console.log(ordered)
-        console.log("SRC")
 
         hash[`user${count+1}`] = {
           "name": username,
@@ -99,16 +101,20 @@ displayed.addEventListener("click", () => {
       setTimeout(toast2, 10)
 
       function toast2() {
-        console.log("enter")
         let hash = (response.data);
+        count = 0
+        m = 0
+        while (hash[`user${m+1}`]) {
+          m += 1;
+          count += 1
+        }
+        
         second.style.display = "flex"
-console.log(hash)
-        let n = 1
+        let n = 0
         while (hash[`user${n+1}`]) {
           n += 1;
           col = document.getElementById(`user${n}`)
           top8(hash[`user${n}`]["name"], hash[`user${n}`]["classement"], col)
-
         }
 
 
