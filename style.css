@@ -1,63 +1,102 @@
 .grid {
     display: flex;
-    flex-wrap :wrap;
+    flex-wrap: wrap;
     width: 550px;
-    /* border: solid 1px black; */
     padding: 50px;
     margin: auto;
 }
 
 .card {
     margin: 3%;
-    filter: saturate(140%);
-width: 100px;
-height: 100px;
-background-color: black;
-z-index: 3;
+    filter: saturate(180%);
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    z-index: 3;
 }
 
 .iconlove {
     padding: 3%;
     filter: saturate(140%);
-width: 100px;
-height: 100px;
-vertical-align:bottom;
-z-index:-1;
-    
+    width: 100px;
+    height: 100px;
+    vertical-align: bottom;
+    z-index: -1;
+
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    position:relative;
+    position: relative;
     align-items: center;
 
 }
+
 #save {
     background-color: white;
-    color:black;
-    height: 30px;
+    color: black;
+    height: 40px;
+    width: 120px;
     font-size: 15px;
     font-family: "Arial";
     font-weight: bolder;
+}
+
+#name {
+    width: 60px;
+}
+
+#display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 78px;
+    width: 72px;
+    background-image: url("crown.png");
+    object-fit: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: white;
+    border: 0px;
+    color: black;
+    font-size: 12px;
+    /* border-radius: 50%; */
+    font-family: "Segoe UI Black";
+    font-weight: bolder;
+    vertical-align: center;
 }
 
 #save:hover {
     background-color: black;
     color: white;
 }
+
+#display:hover {
+    background-color: black;
+    color: white;
+}
+
 .form {
-    position:relative;
+    position: relative;
     bottom: -360px;
-    margin:auto;
-    width: 300px;
+    /* margin:auto; */
+    width: 150px;
     padding: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
 }
 
 a {
     text-decoration: none;
-    color : black;
+    color: black;
 }
+
 a:hover {
     color: white;
 }
@@ -86,59 +125,51 @@ a:hover {
     right: 6px;
     width: 25px;
     z-index: 99;
-    image-orientation:flip;
-    transform:scaleX(-1);
+    image-orientation: flip;
+    transform: scaleX(-1);
 }
 
-.card:hover love-btn {
-
-
-}
+.card:hover love-btn {}
 
 .but {
     background-image: url("love.png");
     width: 20px;
 }
+
 /* .invisible {
 visibility: hidden;
 } */
 
 .image {
-    z-index:999999;
+    z-index: 999999;
 }
 
 .image {
-    /* background-color: pink; */
- /* opacity: 0.3; */
-    box-shadow:0 1px 0 rgba(41, 39, 39, 0.8);
+
+    box-shadow: 0 1px 0 rgba(41, 39, 39, 0.8);
     z-index: -99;
 }
-
-/* .parent {
-
-} */
 
 .child1 {
     margin: 5% 15%;
     position: absolute;
 }
-.child2 {
-    
-}
+
+.child2 {}
 
 
 .flexbox {
-    display:flex;
+    display: flex;
 
 }
 
 .top8 {
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 
 .carte {
-    width:120px;
+    width: 120px;
     text-align: center;
 }
 
@@ -148,32 +179,27 @@ visibility: hidden;
 }
 
 #second {
-    /* display: flex; */
-    /* justify-content: middle; */
-width: 800px;
-align-items: middle;
-/* margin: auto; */
-text-align: center;
-/* height: 200px; */
+    width: 800px;
+    align-items: middle;
+    text-align: center;
 
 }
 
 .flexbox {
-    justify-content: space-between;
-    width: 600px;
+    justify-content: center;
+    width: 1000px;
     align-items: middle;
-    /* margin: auto; */
     text-align: center;
-    /* height: 200px; */
 
 }
 
 .top8 {
-    /* background-color: rgb(231, 223, 223); */
     font-size: 16px;
     font-family: 'Segoe UI Black';
     font-weight: bolder;
+    filter: saturate(120%)
 }
+
 .carte {
     filter: saturate(140%);
 
