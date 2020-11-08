@@ -1,0 +1,180 @@
+.grid {
+    display: flex;
+    flex-wrap :wrap;
+    width: 550px;
+    /* border: solid 1px black; */
+    padding: 50px;
+    margin: auto;
+}
+
+.card {
+    margin: 3%;
+    filter: saturate(140%);
+width: 100px;
+height: 100px;
+background-color: black;
+z-index: 3;
+}
+
+.iconlove {
+    padding: 3%;
+    filter: saturate(140%);
+width: 100px;
+height: 100px;
+vertical-align:bottom;
+z-index:-1;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    align-items: center;
+
+}
+#save {
+    background-color: white;
+    color:black;
+    height: 30px;
+    font-size: 15px;
+    font-family: "Arial";
+    font-weight: bolder;
+}
+
+#save:hover {
+    background-color: black;
+    color: white;
+}
+.form {
+    position:relative;
+    bottom: -360px;
+    margin:auto;
+    width: 300px;
+    padding: 50px;
+}
+
+a {
+    text-decoration: none;
+    color : black;
+}
+a:hover {
+    color: white;
+}
+
+#crown {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 25px;
+    z-index: 99;
+}
+
+.love-btn {
+    position: absolute;
+    visibility: hidden;
+    bottom: 35px;
+    left: 6px;
+    width: 25px;
+    z-index: 99;
+}
+
+.hate-btn {
+    position: absolute;
+    visibility: hidden;
+    bottom: 35px;
+    right: 6px;
+    width: 25px;
+    z-index: 99;
+    image-orientation:flip;
+    transform:scaleX(-1);
+}
+
+.card:hover love-btn {
+
+
+}
+
+.but {
+    background-image: url("love.png");
+    width: 20px;
+}
+/* .invisible {
+visibility: hidden;
+} */
+
+.image {
+    z-index:999999;
+}
+
+.image {
+    /* background-color: pink; */
+ /* opacity: 0.3; */
+    box-shadow:0 1px 0 rgba(41, 39, 39, 0.8);
+    z-index: -99;
+}
+
+/* .parent {
+
+} */
+
+.child1 {
+    margin: 5% 15%;
+    position: absolute;
+}
+.child2 {
+    
+}
+
+
+.flexbox {
+    display:flex;
+
+}
+
+.top8 {
+    display:flex;
+    flex-direction: column;
+}
+
+.carte {
+    width:120px;
+    text-align: center;
+}
+
+
+#first {
+    display: inline;
+}
+
+#second {
+    /* display: flex; */
+    /* justify-content: middle; */
+width: 800px;
+align-items: middle;
+/* margin: auto; */
+text-align: center;
+/* height: 200px; */
+
+}
+
+.flexbox {
+    justify-content: space-between;
+    width: 600px;
+    align-items: middle;
+    /* margin: auto; */
+    text-align: center;
+    /* height: 200px; */
+
+}
+
+.top8 {
+    /* background-color: rgb(231, 223, 223); */
+    font-size: 16px;
+    font-family: 'Segoe UI Black';
+    font-weight: bolder;
+}
+.carte {
+    filter: saturate(140%);
+
+}
