@@ -9,13 +9,13 @@ second = document.getElementById("second")
 function top8(name, array, element) {
   element.innerHTML = `
     <div class="carte">${name}</div></br>
-    <div class="carte"><img src="${array[0]}.png" width="80px"></div>
-    <div class="carte"><img src="${array[1]}.png" width="80px"></div>
-    <div class="carte"><img src="${array[2]}.png" width="80px"></div>
-    <div class="carte"><img src="${array[4]}.png" width="80px"></div>
-    <div class="carte"><img src="${array[5]}.png" width="80px"></div>
-    <div class="carte"><img src="${array[6]}.png" width="80px"></div>
-    <div class="carte"><img src="${array[7]}.png" width="80px"></div>
+    <div class="carte"><img src="${array[0]}.jpg" width="80px"></div>
+    <div class="carte"><img src="${array[1]}.jpg" width="80px"></div>
+    <div class="carte"><img src="${array[2]}.jpg" width="80px"></div>
+    <div class="carte"><img src="${array[4]}.jpg" width="80px"></div>
+    <div class="carte"><img src="${array[5]}.jpg" width="80px"></div>
+    <div class="carte"><img src="${array[6]}.jpg" width="80px"></div>
+    <div class="carte"><img src="${array[7]}.jpg" width="80px"></div>
     `
   count += 1;
 }
@@ -58,7 +58,7 @@ saved.addEventListener("click", () => {
         ordered = []
 
         for (let k = 1; k < 9; k++) {
-          order = document.getElementById(k).src.match(/^.*(?=.png)/)[0].slice(-1)
+          order = document.getElementById(k).src.match(/^.*(?=.jpg)/)[0].slice(-1)
           ordered.push(order)
         }
         console.log(ordered)

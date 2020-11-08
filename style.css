@@ -33,6 +33,11 @@
 
 }
 
+h1 {
+font-family: "Constantia";
+font-weight: 700;
+}
+
 #save {
     background-color: white;
     color: black;
@@ -80,7 +85,7 @@
 
 .form {
     position: relative;
-    bottom: -360px;
+    bottom: -300px;
     /* margin:auto; */
     width: 150px;
     padding: 50px;
