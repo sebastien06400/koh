@@ -7,7 +7,7 @@ second = document.getElementById("second")
 function top8(name, array, element) {
   element.innerHTML = `
     <div class="carte">${name}</div></br>
-    <div class="carte"><img src="${array[0]}.jpg" width="70px"></div>
+    <div class="carte"><img id="crown2" src="crown.png" width="10px"><img src="${array[0]}.jpg" width="70px"></div>
     <div class="carte"><img src="${array[1]}.jpg" width="70px"></div>
     <div class="carte"><img src="${array[2]}.jpg" width="70px"></div>
     <div class="carte"><img src="${array[3]}.jpg" width="70px"></div>
